@@ -46,6 +46,10 @@
 html { scroll-behavior: smooth; }
 
 body {
+    /* The footer stays at the bottom of the window on short pages. */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
     background: var(--ground);
     color: var(--text);
@@ -69,7 +73,11 @@ a:hover { color: var(--accent-dark); }
 
 .icon { width: 1.1em; height: 1.1em; vertical-align: -.18em; flex: none; }
 
+main { flex: 1 0 auto; }
 .container { max-width: 80rem; margin: 0 auto; padding: 0 1.25rem; }
+.account-nav { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 2rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--line); }
+.account-nav a { padding: .4rem .9rem; border: 1px solid var(--line); border-radius: 2rem; background: var(--surface); color: var(--ink); font-size: .9rem; font-weight: 600; text-decoration: none; }
+.account-nav a:hover { border-color: var(--accent); color: var(--accent); }
 .container.narrow { max-width: 50rem; }
 .page { padding-top: 2.5rem; padding-bottom: 4rem; }
 .flashes { padding-top: 1.25rem; }
