@@ -352,3 +352,4 @@ a.button { margin-top: .4rem; }
 .dashboard-heading { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .5rem 1rem; }
 .dashboard-main section { margin-bottom: 2rem; }
 @media (max-width: 48rem) { .dashboard { grid-template-columns: minmax(0, 1fr); } }
+img.avatar { display: block; object-fit: cover; }
