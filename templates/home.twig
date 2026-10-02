@@ -2,6 +2,9 @@
 {% import '_icons.twig' as icons %}
 
 {% block page %}
+{# The marketplace page needs a catalogue; without an extension that adds
+   offers, the home page is the site's name and what extensions show. #}
+{% if has_catalogue() %}
 {% set tree = categories() %}
 
 <section class="hero">
@@ -91,6 +94,15 @@
     </section>
 {% endif %}
 
+{# What extensions show on the home page, e.g. the latest posts of a blog. #}
+{% for section in home_sections() %}
+    <section class="band band-white">
+        <div class="container">
+            {% include section %}
+        </div>
+    </section>
+{% endfor %}
+
 <section class="band">
     <div class="container">
         <div class="section-head centered">
@@ -123,4 +135,21 @@
         </div>
     </div>
 </section>
+{% else %}
+<section class="hero">
+    <div class="container narrow">
+        <h1>{{ site_name }}</h1>
+    </div>
+</section>
+
+{# What extensions show on the home page, e.g. the latest posts of a blog. #}
+{% for section in home_sections() %}
+    <section class="band band-white">
+        <div class="container">
+            {% include section %}
+        </div>
+    </section>
+{% endfor %}
+
+{% endif %}
 {% endblock %}
