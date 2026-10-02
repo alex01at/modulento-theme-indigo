@@ -9,6 +9,10 @@ offers, a provider showcase, three steps and a closing call to action), card
 partials for offers and providers, a stylesheet and its font. Every other
 page comes from Modulento's `default` theme and only looks different.
 
+The theme has a dark scheme. It follows the device, unless an account has
+chosen "light" or "dark" in its settings. Every colour in `assets/theme.css`
+is a variable; the dark values are in the two blocks below `:root`.
+
 ## Installing
 
 In Modulento, open **Administration → Packages**, enter
