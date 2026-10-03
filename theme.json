@@ -1,6 +1,6 @@
 {
     "id": "indigo",
     "name": "Indigo",
-    "version": "0.2.2",
-    "requires": "0.15.2"
+    "version": "0.2.3",
+    "requires": "0.18.0"
 }

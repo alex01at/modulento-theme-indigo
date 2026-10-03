@@ -221,6 +221,15 @@ main { flex: 1 0 auto; }
 .brand-mark .icon { width: 1.4rem; height: 1.4rem; }
 .brand-mark.small { width: 1.5rem; height: 1.5rem; border-radius: .4rem; box-shadow: none; }
 .brand-mark.small .icon { width: 1rem; height: 1rem; }
+.brand-logo { display: block; height: 2.5rem; width: auto; max-width: 14rem; object-fit: contain; }
+.brand-logo.small { height: 1.5rem; max-width: 9rem; }
+.brand-logo-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .brand-logo-light { display: none; }
+    :root:not([data-theme="light"]) .brand-logo-dark { display: block; }
+}
+:root[data-theme="dark"] .brand-logo-light { display: none; }
+:root[data-theme="dark"] .brand-logo-dark { display: block; }
 
 .main-nav, .header-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1.75rem; font-size: .9rem; font-weight: 600; }
 .header-actions { gap: .4rem 1.1rem; }

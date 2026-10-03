@@ -13,6 +13,13 @@ The theme has a dark scheme. It follows the device, unless an account has
 chosen "light" or "dark" in its settings. Every colour in `assets/theme.css`
 is a variable; the dark values are in the two blocks below `:root`.
 
+A logo uploaded under **Administration → Themes → Branding** replaces the
+decorative mark and the site's name in the header and footer; a separate
+logo for the dark scheme, where there is one, is swapped in by CSS. A
+favicon and the description set under **Administration → Settings** are
+linked and tagged (including Open Graph and Twitter tags) without any
+further setup.
+
 ## Installing
 
 In Modulento, open **Administration → Packages**, enter
