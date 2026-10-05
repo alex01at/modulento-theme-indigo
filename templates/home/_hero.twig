@@ -1,0 +1,26 @@
+{# Receives block: texts (title, text, button_label, button_url). With a catalogue: the search. #}
+{% if has_catalogue() %}
+<section class="hero">
+    <div class="container narrow">
+        <h1>{{ block.texts.title }}</h1>
+        {% if block.texts.text %}<p class="lead">{{ block.texts.text }}</p>{% endif %}
+        <form method="get" action="{{ url('/offers') }}" class="search-box" role="search">
+            <label class="visually-hidden" for="hero-q">{{ trans('core.offers.search') }}</label>
+            <div class="search-field">
+                <input id="hero-q" name="q" type="search" placeholder="{{ trans('theme.hero.search_placeholder') }}">
+            </div>
+            <button type="submit">{{ trans('theme.hero.search_submit') }}</button>
+        </form>
+        {% if block.texts.button_label and block.texts.button_url %}
+            <p><a class="button large" href="{{ block.texts.button_url starts with '/' ? url(block.texts.button_url) : block.texts.button_url }}">{{ block.texts.button_label }}</a></p>
+        {% endif %}
+    </div>
+</section>
+{% else %}
+<section class="hero">
+    <div class="container narrow">
+        <h1>{{ block.texts.title }}</h1>
+        {% if block.texts.text %}<p class="lead">{{ block.texts.text }}</p>{% endif %}
+    </div>
+</section>
+{% endif %}

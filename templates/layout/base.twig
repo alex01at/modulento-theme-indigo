@@ -44,6 +44,8 @@
     {% block head %}{% endblock %}
 </head>
 <body class="{% block body_class %}{% endblock %}">
+{# Signed in as someone else: the bar with the way back. #}
+{% include 'layout/_impersonation.twig' %}
 <a class="skip-link" href="#content">{{ trans('theme.skip') }}</a>
 
 <header class="site-header">

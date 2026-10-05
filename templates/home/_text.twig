@@ -1,0 +1,7 @@
+{# Receives block: texts (heading, body - cleaned HTML). #}
+<section class="band">
+    <div class="container narrow">
+        {% if block.texts.heading %}<h2>{{ block.texts.heading }}</h2>{% endif %}
+        {{ block.texts.body|raw }}
+    </div>
+</section>
