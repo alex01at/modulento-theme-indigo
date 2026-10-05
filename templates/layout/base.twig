@@ -29,7 +29,10 @@
     {% for language in locale_urls() %}
         <link rel="alternate" hreflang="{{ language.locale }}" href="{{ language.absolute_url }}">
     {% endfor %}
-    <link rel="preload" href="{{ theme_asset('fonts/plus-jakarta-sans-latin.woff2') }}" as="font" type="font/woff2" crossorigin>
+    {# The same address as the stylesheet's @font-face uses (it resolves relative to theme.css,
+       which has no version in its path): with a cache-busting "?v=" here, the browser would
+       fetch the font twice. Assets are always served from /assets/theme/. #}
+    <link rel="preload" href="/assets/theme/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="{{ theme_asset('theme.css') }}">
     {# Both scripts and the menu's markup come from the default theme. #}
     <script src="{{ theme_asset('password-toggle.js') }}" defer data-show="{{ trans('core.password.show') }}" data-hide="{{ trans('core.password.hide') }}"></script>
