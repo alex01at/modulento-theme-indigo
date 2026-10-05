@@ -2,8 +2,8 @@
 {% if has_catalogue() %}
 <section class="hero">
     <div class="container narrow">
-        <h1>{{ block.texts.title }}</h1>
-        {% if block.texts.text %}<p class="lead">{{ block.texts.text }}</p>{% endif %}
+        <h1 data-field="title">{{ block.texts.title }}</h1>
+        {% if block.texts.text or edit_mode() %}<p class="lead" data-field="text">{{ block.texts.text }}</p>{% endif %}
         <form method="get" action="{{ url('/offers') }}" class="search-box" role="search">
             <label class="visually-hidden" for="hero-q">{{ trans('core.offers.search') }}</label>
             <div class="search-field">
@@ -19,8 +19,8 @@
 {% else %}
 <section class="hero">
     <div class="container narrow">
-        <h1>{{ block.texts.title }}</h1>
-        {% if block.texts.text %}<p class="lead">{{ block.texts.text }}</p>{% endif %}
+        <h1 data-field="title">{{ block.texts.title }}</h1>
+        {% if block.texts.text or edit_mode() %}<p class="lead" data-field="text">{{ block.texts.text }}</p>{% endif %}
     </div>
 </section>
 {% endif %}

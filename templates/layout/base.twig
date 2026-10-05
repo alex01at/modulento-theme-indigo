@@ -38,6 +38,8 @@
     <link rel="stylesheet" href="{{ design_url() }}">
     {# Both scripts and the menu's markup come from the default theme. #}
     <script src="{{ theme_asset('password-toggle.js') }}" defer data-show="{{ trans('core.password.show') }}" data-hide="{{ trans('core.password.hide') }}"></script>
+    {% if edit_mode() %}<script src="{{ admin_asset('editor.js') }}" defer></script>
+    <script src="{{ admin_asset('inline-edit.js') }}" defer></script>{% endif %}
     {% if account %}
         <script src="{{ theme_asset('account-menu.js') }}" defer></script>
     {% endif %}
