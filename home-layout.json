@@ -1,0 +1,112 @@
+[
+  {
+    "id": "hero",
+    "type": "hero",
+    "enabled": true,
+    "settings": {},
+    "texts": {
+      "de": {
+        "title": "Finde den passenden Freelancer für dein nächstes Projekt.",
+        "text": "Vergleiche Angebote mit klaren Paketen und Preisen, bestelle direkt und behalte Lieferung, Korrekturen und Abnahme an einem Ort im Blick."
+      },
+      "en": {
+        "title": "Find the right freelancer for your next project.",
+        "text": "Compare offers with clear packages and prices, order directly, and keep delivery, revisions and acceptance in one place."
+      }
+    }
+  },
+  {
+    "id": "categories",
+    "type": "categories",
+    "enabled": true,
+    "settings": {},
+    "texts": {
+      "de": {
+        "heading": "Stöbere nach Kategorie"
+      },
+      "en": {
+        "heading": "Browse by category"
+      }
+    }
+  },
+  {
+    "id": "offers",
+    "type": "offers",
+    "enabled": true,
+    "settings": {
+      "count": 6
+    },
+    "texts": {
+      "de": {
+        "heading": "Neueste Angebote"
+      },
+      "en": {
+        "heading": "Latest offers"
+      }
+    }
+  },
+  {
+    "id": "providers",
+    "type": "providers",
+    "enabled": true,
+    "settings": {
+      "count": 3
+    },
+    "texts": {
+      "de": {
+        "heading": "Lerne unsere Anbieter kennen"
+      },
+      "en": {
+        "heading": "Meet our providers"
+      }
+    }
+  },
+  {
+    "id": "steps",
+    "type": "text",
+    "enabled": true,
+    "settings": {},
+    "texts": {
+      "de": {
+        "heading": "In drei Schritten zum Ergebnis",
+        "body": "<ol><li><strong>Angebot finden.</strong> Suche nach dem, was du brauchst, und vergleiche Pakete, Lieferzeiten und Bewertungen.</li><li><strong>Paket bestellen.</strong> Wähle Paket und Extras, schick dem Anbieter deine Angaben und Dateien gleich mit.</li><li><strong>Abnehmen und bewerten.</strong> Du bekommst die Lieferung auf der Bestellseite, forderst bei Bedarf Korrekturen an und bewertest zum Schluss.</li></ol>"
+      },
+      "en": {
+        "heading": "Three steps to the result",
+        "body": "<ol><li><strong>Find an offer.</strong> Search for what you need and compare packages, delivery times and reviews.</li><li><strong>Order a package.</strong> Choose a package and extras, and send the provider your details and files right away.</li><li><strong>Accept and review.</strong> The delivery arrives on the order page; ask for revisions if needed and review at the end.</li></ol>"
+      }
+    }
+  },
+  {
+    "id": "cta",
+    "type": "text",
+    "enabled": true,
+    "settings": {},
+    "texts": {
+      "de": {
+        "heading": "Du bietest selbst etwas an?",
+        "body": "<p>Lege ein Anbieterprofil an, stelle deine Leistungen mit Paketen und Preisen ein und werde gefunden.</p>"
+      },
+      "en": {
+        "heading": "Do you offer something yourself?",
+        "body": "<p>Create a provider profile, offer your services with packages and prices, and be found.</p>"
+      }
+    }
+  },
+  {
+    "id": "cta-links",
+    "type": "links",
+    "enabled": true,
+    "settings": {},
+    "texts": {
+      "de": {
+        "heading": "",
+        "items": "Jetzt Anbieter werden | /register\nAnbieter ansehen | /providers"
+      },
+      "en": {
+        "heading": "",
+        "items": "Become a provider | /register\nSee providers | /providers"
+      }
+    }
+  }
+]
