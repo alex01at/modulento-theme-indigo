@@ -18,7 +18,7 @@
             <div class="card-foot">
                 <a href="{{ url(offer.provider_path) }}">{{ offer.provider_name }}</a>
                 {% if offer.price_from is not null %}
-                    <strong>{{ trans('core.offer.price_from', {price: money(offer.price_from, offer.currency)}) }}</strong>
+                    <strong>{{ trans(offer.price_label_key, {price: money(offer.price_from, offer.currency)}) }}</strong>
                 {% endif %}
             </div>
         </li>
