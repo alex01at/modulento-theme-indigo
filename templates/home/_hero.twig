@@ -1,6 +1,6 @@
 {# Receives block: texts (title, text, button_label, button_url). With a catalogue: the search. #}
 {% if has_catalogue() %}
-<section class="hero">
+<section data-home-block="{{ block.id }}" class="hero">
     <div class="container narrow">
         <h1 data-field="title">{{ block.texts.title }}</h1>
         {% if block.texts.text or edit_mode() %}<p class="lead" data-field="text">{{ block.texts.text }}</p>{% endif %}
@@ -17,7 +17,7 @@
     </div>
 </section>
 {% else %}
-<section class="hero">
+<section data-home-block="{{ block.id }}" class="hero">
     <div class="container narrow">
         <h1 data-field="title">{{ block.texts.title }}</h1>
         {% if block.texts.text or edit_mode() %}<p class="lead" data-field="text">{{ block.texts.text }}</p>{% endif %}
