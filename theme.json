@@ -1,7 +1,7 @@
 {
     "id": "indigo",
     "name": "Indigo",
-    "version": "0.2.21",
+    "version": "0.2.22",
     "requires": "0.61.0",
     "description": "A light, roomy marketplace look: white cards on a pale ground, with indigo as the one accent."
 }

@@ -57,6 +57,4 @@ a GitHub Release.
 
 ## Licence
 
-The theme is licensed under GPL-3.0-or-later, see `LICENSE`. The font Plus
-Jakarta Sans in `assets/fonts/` is licensed under the SIL Open Font License,
-see `assets/fonts/OFL.txt`.
+Dies ist ein kommerzielles Produkt, lizenziert je Installation unter dem Endnutzer-Lizenzvertrag in `LICENSE` - nicht GPL (der Modulento-Kern selbst bleibt GPL-3.0-or-later; dieses Theme ist ein eigenständiges, proprietäres Werk). Die Schrift Plus Jakarta Sans in `assets/fonts/` ist unter der SIL Open Font License lizenziert, siehe `assets/fonts/OFL.txt`.
